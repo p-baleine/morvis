@@ -1,0 +1,28 @@
+{
+  "name": "morvis",
+  "version": "0.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "d3": "latest",
+    "express": "latest",
+    "request": "latest",
+    "libxml-to-js": "latest",
+    "jade": "latest",
+    "browserify": "latest",
+    "bower": "latest",
+    "grunt": "latest",
+    "grunt-browserify": "latest",
+    "grunt-contrib-less": "latest",
+    "debug": "latest"
+  },
+  "devDependencies": {
+    "grunt-contrib-watch": "latest",
+    "grunt-nodemon": "latest"
+  }
+}
