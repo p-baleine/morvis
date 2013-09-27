@@ -7,11 +7,14 @@ exports = module.exports = (grunt) ->
         files: ["src/client/**/*.coffee"]
         tasks: ["browserify"]
       coffee:
-        files: ["app.coffee", "src/*.coffee", "!src/client/boot.coffee"]
+        files: ["app.coffee", "src/*.coffee", "spec/*.coffee", "!src/client/boot.coffee"]
         tasks: ["coffee"]
       less:
         files: ["less/**/*.less"]
         tasks: ["less"]
+      mochaTest:
+        files: ["lib/**/*.js", "spec/**/*.spec.js"]
+        tasks: ["mochaTest"]
 
     coffee:
       server:
@@ -42,6 +45,13 @@ exports = module.exports = (grunt) ->
       options:
         transform: ["coffeeify"]
 
+    mochaTest:
+      unit:
+        options:
+          reporter: "dot"
+          growl: on
+        src: ["spec/**/*.spec.js"]
+
     less:
       dev:
         files:
@@ -57,4 +67,6 @@ exports = module.exports = (grunt) ->
   grunt.loadNpmTasks "grunt-contrib-coffee"
   grunt.loadNpmTasks "grunt-contrib-less"
   grunt.loadNpmTasks "grunt-contrib-watch"
+  grunt.loadNpmTasks "grunt-mocha-test"
   grunt.loadNpmTasks "grunt-nodemon"
+

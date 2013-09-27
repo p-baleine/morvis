@@ -1,0 +1,642 @@
+{
+  "@": {
+    "schemaLocation": "urn:yahoo:jp:jlp:DAService http://jlp.yahooapis.jp/DAService/V1/parseResponse.xsd",
+    "xmlns": {
+      "xmlns": "urn:yahoo:jp:jlp:DAService"
+    }
+  },
+  "Result": {
+    "ChunkList": {
+      "Chunk": [
+        {
+          "Id": "0",
+          "Dependency": "4",
+          "MorphemList": {
+            "Morphem": [
+              {
+                "Surface": "2013年",
+                "Reading": "2013ねん",
+                "Baseform": "2013年",
+                "POS": "接尾辞",
+                "Feature": "接尾辞,助数,*,2013年,2013ねん,2013年"
+              },
+              {
+                "Surface": "1月",
+                "Reading": "1がつ",
+                "Baseform": "1月",
+                "POS": "接尾辞",
+                "Feature": "接尾辞,助数,*,1月,1がつ,1月"
+              },
+              {
+                "Surface": "、",
+                "Reading": "、",
+                "Baseform": "、",
+                "POS": "特殊",
+                "Feature": "特殊,読点,*,、,、,、"
+              }
+            ]
+          }
+        },
+        {
+          "Id": "1",
+          "Dependency": "4",
+          "MorphemList": {
+            "Morphem": [
+              {
+                "Surface": "1歳",
+                "Reading": "1さい",
+                "Baseform": "1歳",
+                "POS": "接尾辞",
+                "Feature": "接尾辞,助数,*,1歳,1さい,1歳"
+              },
+              {
+                "Surface": "4か月",
+                "Reading": "4かげつ",
+                "Baseform": "4か月",
+                "POS": "接尾辞",
+                "Feature": "接尾辞,助数,*,4か月,4かげつ,4か月"
+              },
+              {
+                "Surface": "で",
+                "Reading": "で",
+                "Baseform": "で",
+                "POS": "助詞",
+                "Feature": "助詞,格助詞,*,で,で,で"
+              }
+            ]
+          }
+        },
+        {
+          "Id": "2",
+          "Dependency": "3",
+          "MorphemList": {
+            "Morphem": [
+              {
+                "Surface": "両",
+                "Reading": "りょう",
+                "Baseform": "両",
+                "POS": "接頭辞",
+                "Feature": "接頭辞,接頭,*,両,りょう,両"
+              },
+              {
+                "Surface": "前脚",
+                "Reading": "まえあし",
+                "Baseform": "前脚",
+                "POS": "名詞",
+                "Feature": "名詞,名詞,*,前脚,まえあし,前脚"
+              },
+              {
+                "Surface": "の",
+                "Reading": "の",
+                "Baseform": "の",
+                "POS": "助詞",
+                "Feature": "助詞,助詞連体化,*,の,の,の"
+              }
+            ]
+          }
+        },
+        {
+          "Id": "3",
+          "Dependency": "4",
+          "MorphemList": {
+            "Morphem": [
+              {
+                "Surface": "骨折",
+                "Reading": "こっせつ",
+                "Baseform": "骨折",
+                "POS": "名詞",
+                "Feature": "名詞,名サ他,*,骨折,こっせつ,骨折"
+              },
+              {
+                "Surface": "が",
+                "Reading": "が",
+                "Baseform": "が",
+                "POS": "助詞",
+                "Feature": "助詞,格助詞,*,が,が,が"
+              }
+            ]
+          }
+        },
+        {
+          "Id": "4",
+          "Dependency": "7",
+          "MorphemList": {
+            "Morphem": [
+              {
+                "Surface": "判明",
+                "Reading": "はんめい",
+                "Baseform": "判明",
+                "POS": "名詞",
+                "Feature": "名詞,名サ自,*,判明,はんめい,判明"
+              },
+              {
+                "Surface": "し",
+                "Reading": "し",
+                "Baseform": "し",
+                "POS": "助動詞",
+                "Feature": "助動詞,助動詞する,連用ゴザイ接続,し,し,し"
+              },
+              {
+                "Surface": "、",
+                "Reading": "、",
+                "Baseform": "、",
+                "POS": "特殊",
+                "Feature": "特殊,読点,*,、,、,、"
+              }
+            ]
+          }
+        },
+        {
+          "Id": "5",
+          "Dependency": "6",
+          "MorphemList": {
+            "Morphem": [
+              {
+                "Surface": "懸命",
+                "Reading": "けんめい",
+                "Baseform": "懸命",
+                "POS": "形容動詞",
+                "Feature": "形容動詞,形動,*,懸命,けんめい,懸命"
+              },
+              {
+                "Surface": "の",
+                "Reading": "の",
+                "Baseform": "の",
+                "POS": "助詞",
+                "Feature": "助詞,助詞連体化,*,の,の,の"
+              }
+            ]
+          }
+        },
+        {
+          "Id": "6",
+          "Dependency": "7",
+          "MorphemList": {
+            "Morphem": [
+              {
+                "Surface": "治療",
+                "Reading": "ちりょう",
+                "Baseform": "治療",
+                "POS": "名詞",
+                "Feature": "名詞,名サ他,*,治療,ちりょう,治療"
+              },
+              {
+                "Surface": "が",
+                "Reading": "が",
+                "Baseform": "が",
+                "POS": "助詞",
+                "Feature": "助詞,格助詞,*,が,が,が"
+              }
+            ]
+          }
+        },
+        {
+          "Id": "7",
+          "Dependency": "9",
+          "MorphemList": {
+            "Morphem": [
+              {
+                "Surface": "行われ",
+                "Reading": "おこなわれ",
+                "Baseform": "行われ",
+                "POS": "動詞",
+                "Feature": "動詞,一段,未然ウ接続,行われ,おこなわれ,行われ"
+              },
+              {
+                "Surface": "、",
+                "Reading": "、",
+                "Baseform": "、",
+                "POS": "特殊",
+                "Feature": "特殊,読点,*,、,、,、"
+              }
+            ]
+          }
+        },
+        {
+          "Id": "8",
+          "Dependency": "9",
+          "MorphemList": {
+            "Morphem": [
+              {
+                "Surface": "骨折",
+                "Reading": "こっせつ",
+                "Baseform": "骨折",
+                "POS": "名詞",
+                "Feature": "名詞,名サ他,*,骨折,こっせつ,骨折"
+              },
+              {
+                "Surface": "が",
+                "Reading": "が",
+                "Baseform": "が",
+                "POS": "助詞",
+                "Feature": "助詞,格助詞,*,が,が,が"
+              }
+            ]
+          }
+        },
+        {
+          "Id": "9",
+          "Dependency": "11",
+          "MorphemList": {
+            "Morphem": [
+              {
+                "Surface": "完治",
+                "Reading": "かんち",
+                "Baseform": "完治",
+                "POS": "名詞",
+                "Feature": "名詞,名サ自,*,完治,かんち,完治"
+              },
+              {
+                "Surface": "する",
+                "Reading": "す",
+                "Baseform": "す",
+                "POS": "助動詞",
+                "Feature": "助動詞,助動詞する,基本形,する,す,す"
+              },
+              {
+                "Surface": "が",
+                "Reading": "が",
+                "Baseform": "が",
+                "POS": "助詞",
+                "Feature": "助詞,接続助詞,*,が,が,が"
+              },
+              {
+                "Surface": "、",
+                "Reading": "、",
+                "Baseform": "、",
+                "POS": "特殊",
+                "Feature": "特殊,読点,*,、,、,、"
+              }
+            ]
+          }
+        },
+        {
+          "Id": "10",
+          "Dependency": "11",
+          "MorphemList": {
+            "Morphem": {
+              "Surface": "ほとんど",
+              "Reading": "ほとんど",
+              "Baseform": "ほとんど",
+              "POS": "副詞",
+              "Feature": "副詞,副詞,*,ほとんど,ほとんど,ほとんど"
+            }
+          }
+        },
+        {
+          "Id": "11",
+          "Dependency": "12",
+          "MorphemList": {
+            "Morphem": [
+              {
+                "Surface": "寝",
+                "Reading": "ね",
+                "Baseform": "寝",
+                "POS": "動詞",
+                "Feature": "動詞,一段,未然ウ接続,寝,ね,寝"
+              },
+              {
+                "Surface": "た",
+                "Reading": "た",
+                "Baseform": "た",
+                "POS": "助動詞",
+                "Feature": "助動詞,助動詞た,基本形,た,た,た"
+              }
+            ]
+          }
+        },
+        {
+          "Id": "12",
+          "Dependency": "13",
+          "MorphemList": {
+            "Morphem": [
+              {
+                "Surface": "まま",
+                "Reading": "まま",
+                "Baseform": "まま",
+                "POS": "名詞",
+                "Feature": "名詞,名詞,*,まま,まま,まま"
+              },
+              {
+                "Surface": "の",
+                "Reading": "の",
+                "Baseform": "の",
+                "POS": "助詞",
+                "Feature": "助詞,助詞連体化,*,の,の,の"
+              }
+            ]
+          }
+        },
+        {
+          "Id": "13",
+          "Dependency": "17",
+          "MorphemList": {
+            "Morphem": [
+              {
+                "Surface": "状態",
+                "Reading": "じょうたい",
+                "Baseform": "状態",
+                "POS": "名詞",
+                "Feature": "名詞,名詞,*,状態,じょうたい,状態"
+              },
+              {
+                "Surface": "で",
+                "Reading": "で",
+                "Baseform": "で",
+                "POS": "助詞",
+                "Feature": "助詞,格助詞,*,で,で,で"
+              }
+            ]
+          }
+        },
+        {
+          "Id": "14",
+          "Dependency": "17",
+          "MorphemList": {
+            "Morphem": [
+              {
+                "Surface": "過ごさ",
+                "Reading": "すご",
+                "Baseform": "過ご",
+                "POS": "動詞",
+                "Feature": "動詞,サ五,文語基本形,過ごさ,すご,過ご"
+              },
+              {
+                "Surface": "ざる",
+                "Reading": "ざ",
+                "Baseform": "ざ",
+                "POS": "助動詞",
+                "Feature": "助動詞,助動詞ぬ,連用タ接続,ざる,ざ,ざ"
+              },
+              {
+                "Surface": "を",
+                "Reading": "を",
+                "Baseform": "を",
+                "POS": "助詞",
+                "Feature": "助詞,格助詞,*,を,を,を"
+              }
+            ]
+          }
+        },
+        {
+          "Id": "15",
+          "Dependency": "17",
+          "MorphemList": {
+            "Morphem": [
+              {
+                "Surface": "え",
+                "Reading": "え",
+                "Baseform": "え",
+                "POS": "動詞",
+                "Feature": "動詞,一段,文語基本形,え,え,え"
+              },
+              {
+                "Surface": "なかっ",
+                "Reading": "な",
+                "Baseform": "な",
+                "POS": "助動詞",
+                "Feature": "助動詞,助動詞ない,連用テ接続,なかっ,な,な"
+              },
+              {
+                "Surface": "た",
+                "Reading": "た",
+                "Baseform": "た",
+                "POS": "助動詞",
+                "Feature": "助動詞,助動詞た,基本形,た,た,た"
+              },
+              {
+                "Surface": "ため",
+                "Reading": "ため",
+                "Baseform": "ため",
+                "POS": "助詞",
+                "Feature": "助詞,助詞その他,*,ため,ため,ため"
+              },
+              {
+                "Surface": "に",
+                "Reading": "に",
+                "Baseform": "に",
+                "POS": "助詞",
+                "Feature": "助詞,助詞副詞化,*,に,に,に"
+              }
+            ]
+          }
+        },
+        {
+          "Id": "16",
+          "Dependency": "17",
+          "MorphemList": {
+            "Morphem": [
+              {
+                "Surface": "筋力",
+                "Reading": "きんりょく",
+                "Baseform": "筋力",
+                "POS": "名詞",
+                "Feature": "名詞,名詞,*,筋力,きんりょく,筋力"
+              },
+              {
+                "Surface": "が",
+                "Reading": "が",
+                "Baseform": "が",
+                "POS": "助詞",
+                "Feature": "助詞,格助詞,*,が,が,が"
+              }
+            ]
+          }
+        },
+        {
+          "Id": "17",
+          "Dependency": "18",
+          "MorphemList": {
+            "Morphem": {
+              "Surface": "衰え",
+              "Reading": "おとろえ",
+              "Baseform": "衰え",
+              "POS": "動詞",
+              "Feature": "動詞,一段,未然ウ接続,衰え,おとろえ,衰え"
+            }
+          }
+        },
+        {
+          "Id": "18",
+          "Dependency": "19",
+          "MorphemList": {
+            "Morphem": {
+              "Surface": "立て",
+              "Reading": "た",
+              "Baseform": "立",
+              "POS": "動詞",
+              "Feature": "動詞,タ五,連用テ接続,立て,た,立"
+            }
+          }
+        },
+        {
+          "Id": "19",
+          "Dependency": "21",
+          "MorphemList": {
+            "Morphem": [
+              {
+                "Surface": "なくなり",
+                "Reading": "なくな",
+                "Baseform": "なくな",
+                "POS": "動詞",
+                "Feature": "動詞,ラ五,連用タ接続,なくなり,なくな,なくな"
+              },
+              {
+                "Surface": "、",
+                "Reading": "、",
+                "Baseform": "、",
+                "POS": "特殊",
+                "Feature": "特殊,読点,*,、,、,、"
+              }
+            ]
+          }
+        },
+        {
+          "Id": "20",
+          "Dependency": "21",
+          "MorphemList": {
+            "Morphem": {
+              "Surface": "その",
+              "Reading": "その",
+              "Baseform": "その",
+              "POS": "連体詞",
+              "Feature": "連体詞,連体,*,その,その,その"
+            }
+          }
+        },
+        {
+          "Id": "21",
+          "Dependency": "22",
+          "MorphemList": {
+            "Morphem": [
+              {
+                "Surface": "衰え",
+                "Reading": "おとろえ",
+                "Baseform": "衰え",
+                "POS": "動詞",
+                "Feature": "動詞,一段,未然ウ接続,衰え,おとろえ,衰え"
+              },
+              {
+                "Surface": "た",
+                "Reading": "た",
+                "Baseform": "た",
+                "POS": "助動詞",
+                "Feature": "助動詞,助動詞た,基本形,た,た,た"
+              }
+            ]
+          }
+        },
+        {
+          "Id": "22",
+          "Dependency": "23",
+          "MorphemList": {
+            "Morphem": [
+              {
+                "Surface": "筋力",
+                "Reading": "きんりょく",
+                "Baseform": "筋力",
+                "POS": "名詞",
+                "Feature": "名詞,名詞,*,筋力,きんりょく,筋力"
+              },
+              {
+                "Surface": "を",
+                "Reading": "を",
+                "Baseform": "を",
+                "POS": "助詞",
+                "Feature": "助詞,格助詞,*,を,を,を"
+              }
+            ]
+          }
+        },
+        {
+          "Id": "23",
+          "Dependency": "24",
+          "MorphemList": {
+            "Morphem": [
+              {
+                "Surface": "回復",
+                "Reading": "かいふく",
+                "Baseform": "回復",
+                "POS": "名詞",
+                "Feature": "名詞,名サ他,*,回復,かいふく,回復"
+              },
+              {
+                "Surface": "さ",
+                "Reading": "さ",
+                "Baseform": "さ",
+                "POS": "助動詞",
+                "Feature": "助動詞,助動詞する,連用タ接続,さ,さ,さ"
+              },
+              {
+                "Surface": "せる",
+                "Reading": "せ",
+                "Baseform": "せ",
+                "POS": "助動詞",
+                "Feature": "助動詞,助動詞一段,基本形,せる,せ,せ"
+              }
+            ]
+          }
+        },
+        {
+          "Id": "24",
+          "Dependency": "25",
+          "MorphemList": {
+            "Morphem": [
+              {
+                "Surface": "リハビリ",
+                "Reading": "りはびり",
+                "Baseform": "リハビリ",
+                "POS": "名詞",
+                "Feature": "名詞,名サ自,*,リハビリ,りはびり,リハビリ"
+              },
+              {
+                "Surface": "が",
+                "Reading": "が",
+                "Baseform": "が",
+                "POS": "助詞",
+                "Feature": "助詞,格助詞,*,が,が,が"
+              }
+            ]
+          }
+        },
+        {
+          "Id": "25",
+          "Dependency": "-1",
+          "MorphemList": {
+            "Morphem": [
+              {
+                "Surface": "行われ",
+                "Reading": "おこなわれ",
+                "Baseform": "行われ",
+                "POS": "動詞",
+                "Feature": "動詞,一段,未然ウ接続,行われ,おこなわれ,行われ"
+              },
+              {
+                "Surface": "て",
+                "Reading": "て",
+                "Baseform": "て",
+                "POS": "助詞",
+                "Feature": "助詞,接続助詞,*,て,て,て"
+              },
+              {
+                "Surface": "いる",
+                "Reading": "い",
+                "Baseform": "い",
+                "POS": "助動詞",
+                "Feature": "助動詞,助動詞一段,基本形,いる,い,い"
+              },
+              {
+                "Surface": "。",
+                "Reading": "。",
+                "Baseform": "。",
+                "POS": "特殊",
+                "Feature": "特殊,句点,*,。,。,。"
+              }
+            ]
+          }
+        }
+      ]
+    }
+  }
+}
+

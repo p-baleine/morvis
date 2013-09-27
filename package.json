@@ -24,7 +24,11 @@
     "debug": "latest"
   },
   "devDependencies": {
+    "chai": "latest",
+    "sinon": "latest",
+    "sinon-chai": "latest",
     "grunt-contrib-watch": "latest",
-    "grunt-nodemon": "latest"
+    "grunt-nodemon": "latest",
+    "grunt-mocha-test": "latest"
   }
 }

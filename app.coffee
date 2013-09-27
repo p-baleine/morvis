@@ -1,9 +1,11 @@
 
 # module dependencies.
-express = require("express")
-request = require("request")
-parser = require("libxml-to-js")
-debug = require("debug")("http")
+express = require "express"
+request = require "request"
+parser = require "libxml-to-js"
+debug = require("debug") "http"
+format = require "./lib/format"
+
 app = exports = module.exports = express()
 
 DA_SERVICE = "http://jlp.yahooapis.jp/DAService/V1/parse"
@@ -32,7 +34,7 @@ app.get "/analyse", (req, res) ->
   , (err, response, body) ->
     throw new Error(500)  if err or response.statusCode isnt 200
     parser body, (err, result) ->
-      res.send result
+      res.send format result
 
 # listen
 unless module.parent
