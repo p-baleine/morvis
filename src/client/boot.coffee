@@ -11,8 +11,8 @@ pallet = {}
 ["名詞", "助詞", "動詞", "助動詞", "形容詞", "副詞", "特殊"].map((pos, i) -> pallet[pos] = color i)
 
 force = d3.layout.force()
-    .charge(-300)
-    .linkDistance(100)
+    .charge(-180)
+    .linkDistance(40)
     .size([width, height])
 
 svg = d3.select("#content").append("svg")
@@ -27,6 +27,7 @@ start = (graph) ->
   force
       .nodes(graph.nodes)
       .links(graph.links)
+      .gravity((d) -> d.weight * .2)
       .start()
 
   link = svg.selectAll(".link")
@@ -37,13 +38,15 @@ start = (graph) ->
   node = svg.selectAll(".node")
       .data(graph.nodes)
     .enter().append("text")
-      .attr("class", (d) -> console.log(d); "node")
+      .attr("class", (d) -> "node")
+      .style("font-size", (d) -> "#{d.weight * .2}em")
       .call(force.drag)
 
   node.selectAll(".node-morphem")
       .data((d) -> d.MorphemList)
     .enter().append("tspan")
       .style("stroke", (d) -> pallet[d.POS] or "#000")
+      .style("fill", (d) -> pallet[d.POS] or "#000")
       .text((d) -> d.Surface)
 
   force.on "tick", ->
