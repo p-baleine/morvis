@@ -15,9 +15,11 @@
     "libxml-to-js": "latest",
     "jade": "latest",
     "browserify": "latest",
+    "coffeeify": "latest",
     "bower": "latest",
     "grunt": "latest",
     "grunt-browserify": "latest",
+    "grunt-contrib-coffee": "latest",
     "grunt-contrib-less": "latest",
     "debug": "latest"
   },

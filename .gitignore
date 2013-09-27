@@ -5,3 +5,4 @@ bower_components
 /public/application.js
 /public/application.css
 
+*.js
