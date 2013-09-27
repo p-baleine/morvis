@@ -21,6 +21,7 @@
     "grunt-browserify": "latest",
     "grunt-contrib-coffee": "latest",
     "grunt-contrib-less": "latest",
+    "grunt-env": "latest",
     "debug": "latest"
   },
   "devDependencies": {

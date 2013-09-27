@@ -9,7 +9,7 @@ format = require "./lib/format"
 app = exports = module.exports = express()
 
 DA_SERVICE = "http://jlp.yahooapis.jp/DAService/V1/parse"
-APP_ID = "dj0zaiZpPUtTSFpQVDBYeG15TSZzPWNvbnN1bWVyc2VjcmV0Jng9Yzg-"
+APP_ID = process.env.YAHOO_APP_ID
 PORT = process.env.PORT or 3000
 
 # middleware

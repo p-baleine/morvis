@@ -63,10 +63,20 @@ exports = module.exports = (grunt) ->
     nodemon:
       dev: {}
 
+    env:
+      dev:
+        NODE_ENV: "development"
+        src: "credentials.json"
+
   grunt.loadNpmTasks "grunt-browserify"
   grunt.loadNpmTasks "grunt-contrib-coffee"
   grunt.loadNpmTasks "grunt-contrib-less"
   grunt.loadNpmTasks "grunt-contrib-watch"
+  grunt.loadNpmTasks "grunt-env"
   grunt.loadNpmTasks "grunt-mocha-test"
   grunt.loadNpmTasks "grunt-nodemon"
 
+  grunt.registerTask "devsrv", [
+    "env:dev"
+    "nodemon"
+  ]
