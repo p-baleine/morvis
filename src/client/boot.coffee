@@ -41,7 +41,7 @@ start = (graph) ->
       .data(graph.nodes)
     .enter().append("text")
       .attr("class", (d) -> "node")
-      .style("font-size", (d) -> "#{d.weight * .5}em")
+      # .style("font-size", (d) -> "#{d.weight * .5}em")
       .call(force.drag)
 
   node.selectAll(".node-morphem")
