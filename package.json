@@ -16,6 +16,7 @@
     "jade": "latest",
     "browserify": "latest",
     "coffeeify": "latest",
+    "underscore": "latest",
     "bower": "latest",
     "grunt": "latest",
     "grunt-browserify": "latest",
