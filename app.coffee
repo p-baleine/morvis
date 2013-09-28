@@ -14,6 +14,7 @@ APP_ID = process.env.YAHOO_APP_ID or throw Error "APP ID is not specified"
 PORT = process.env.PORT or 3000
 
 # middleware
+app.use express.compress()
 app.use express.static "#{__dirname}/public"
 app.use staticAsset "#{__dirname}/public"
 app.use express.errorHandler()
