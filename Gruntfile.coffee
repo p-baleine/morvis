@@ -80,3 +80,9 @@ exports = module.exports = (grunt) ->
     "env:dev"
     "nodemon"
   ]
+
+  grunt.registerTask "heroku:production", [
+    "browserify"
+    "coffee"
+    "less"
+  ]
