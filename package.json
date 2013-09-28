@@ -18,11 +18,13 @@
     "browserify": "latest",
     "coffeeify": "latest",
     "underscore": "latest",
+    "static-asset": "latest",
     "bower": "latest",
     "grunt": "latest",
     "grunt-browserify": "latest",
     "grunt-contrib-coffee": "latest",
     "grunt-contrib-less": "latest",
+    "grunt-contrib-uglify": "latest",
     "grunt-env": "latest",
     "debug": "latest"
   },

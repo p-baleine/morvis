@@ -4,6 +4,7 @@ express = require "express"
 request = require "request"
 parser = require "libxml-to-js"
 debug = require("debug") "http"
+staticAsset = require "static-asset"
 format = require "./lib/format"
 
 app = exports = module.exports = express()
@@ -13,7 +14,8 @@ APP_ID = process.env.YAHOO_APP_ID or throw Error "APP ID is not specified"
 PORT = process.env.PORT or 3000
 
 # middleware
-app.use express.static(__dirname + "/public")
+app.use express.static "#{__dirname}/public"
+app.use staticAsset "#{__dirname}/public"
 app.use express.errorHandler()
 
 # settings

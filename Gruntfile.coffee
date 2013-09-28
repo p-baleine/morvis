@@ -42,8 +42,16 @@ exports = module.exports = (grunt) ->
           "public/application.js": ["src/client/boot.coffee"]
         options:
           debug: true
+      prod:
+        files:
+          "public/application.js": ["src/client/boot.coffee"]
       options:
         transform: ["coffeeify"]
+
+    uglify:
+      prod:
+        files:
+          "public/application.min.js": ["public/application.js"]
 
     mochaTest:
       unit:
@@ -68,6 +76,7 @@ exports = module.exports = (grunt) ->
   grunt.loadNpmTasks "grunt-browserify"
   grunt.loadNpmTasks "grunt-contrib-coffee"
   grunt.loadNpmTasks "grunt-contrib-less"
+  grunt.loadNpmTasks "grunt-contrib-uglify"
   grunt.loadNpmTasks "grunt-contrib-watch"
   grunt.loadNpmTasks "grunt-env"
   grunt.loadNpmTasks "grunt-mocha-test"
@@ -79,7 +88,8 @@ exports = module.exports = (grunt) ->
   ]
 
   grunt.registerTask "heroku:production", [
-    "browserify"
+    "browserify:prod"
+    "uglify"
     "coffee"
     "less"
   ]

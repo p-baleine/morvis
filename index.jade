@@ -21,9 +21,12 @@ html
           a(href="http://www001.upp.so-net.ne.jp/mikachan/" target="_blank") みかちゃんフォント
         li
           span 係り受けについて
-          a(href="http://xn--vcs415akpfnn7a.com/%E3%80%8C%E4%BF%82%E3%82%8A%E5%8F%97%E3%81%91%E3%80%8D%E3%81%A8%E3%81%AF.html" target="_blank") 「係り受け」とは
+          a(href="http://xn--vcs415akpfnn7a.com/%E3%80%8C%E4%BF%82%E3%82%8A%E5%8F%97%E3%81%91%E3%80%8D%E3%81%A8%E3%81%AF.html" target="_blank") 国語の先生が教える国語文法
         li
           span ソース
           iframe(src="http://ghbtns.com/github-btn.html?user=p-baleine&repo=morvis&type=watch"
                  allowtransparency="true" frameborder="0" scrolling="0" width="50" height="20")
-    script(src="/application.js")
+    if settings.env === "production"
+      script(src=assetFingerprint("/application.min.js"))
+    else
+      script(src=assetFingerprint("/application.js"))
