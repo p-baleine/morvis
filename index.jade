@@ -2,12 +2,16 @@
 html
   head
     meta(charset="utf-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no")
     title mavis
     link(href="/application.css" rel="stylesheet")
   body
-    header
-      form#target-text
-        input(type="text" placeholder="解析する文章を入力してください")
-        input(type="submit" value="解析")
-    section#content
+    header.row
+      h1.col-xs-12.col-sm-8.col-md-6.col-sm-offset-2.col-md-offset-3 係り受け解析
+    div.row
+      section#content.col-xs-12.col-sm-10.col-md-8.col-lg-6.col-sm-offset-1.col-md-offset-2.col-lg-offset-3
+    div.row
+    form#target-text.col-xs-12.col-sm-8.col-md-6.col-sm-offset-2.col-md-offset-3
+      textarea.form-control(rows="3" placeholder="解析する文章を入力してください")
+      input.btn.btn-primary(type="submit" value="解析")
     script(src="/application.js")

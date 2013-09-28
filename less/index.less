@@ -1,19 +1,38 @@
 
 #content {
   font-size: 36px;
+  background-image: url(/note.png);
+  background-size: 100% auto;
 
   .node {
     stroke: #333;
     stroke-width: 1.5px;
   }
 
+  text {
+    text-shadow: 1px 1px 3px #000;
+  }
+
   .link {
-    stroke: #CCC;
+    stroke: #4682b4;
     stroke-opacity: .6;
   }
 
   rect {
     stroke: #CCC;
-    fill: #FFF;
+    opacity: 0;
+  }
+}
+
+#target-text {
+  margin-top: 20px;
+
+  textarea {
+    width: 100%;
+  }
+
+  [type=submit] {
+    margin-top: 10px;
+    float: right;
   }
 }

@@ -32,6 +32,8 @@ app.get "/analyse", (req, res) ->
     form:
       sentence: req.query.q
   , (err, response, body) ->
+    console.log err
+    console.log response
     throw new Error(500)  if err or response.statusCode isnt 200
     parser body, (err, result) ->
       res.send format result
