@@ -8,13 +8,16 @@ _ = require "underscore"
 exports = module.exports = (src) ->
   nodes = []
   links = []
+  Chunk = src.Result.ChunkList.Chunk
 
-  src.Result.ChunkList.Chunk.forEach (node) ->
-    Morphem = node.MorphemList.Morphem
-    nodes.push
-      Id: node.Id
-      Dependency: node.Dependency
-      MorphemList: if _.isArray(Morphem) then Morphem else [Morphem]
+  unless _.isArray Chunk
+    return {
+      nodes: chunk Chunk
+      links: []
+    }
+
+  Chunk.forEach (node) ->
+    nodes.push chunk node
 
     links.push
       source: parseInt node.Id, 10
@@ -26,3 +29,9 @@ exports = module.exports = (src) ->
     nodes: nodes
     links: links
   }
+
+chunk = (c) ->
+  Morphem = c.MorphemList.Morphem
+  Id: c.Id
+  Dependency: c.Dependency
+  MorphemList: if _.isArray(Morphem) then Morphem else [Morphem]

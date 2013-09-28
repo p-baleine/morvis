@@ -14,6 +14,7 @@ PORT = process.env.PORT or 3000
 
 # middleware
 app.use express.static(__dirname + "/public")
+app.use express.errorHandler()
 
 # settings
 app.set "view engine", "jade"
@@ -32,8 +33,6 @@ app.get "/analyse", (req, res) ->
     form:
       sentence: req.query.q
   , (err, response, body) ->
-    console.log err
-    console.log response
     throw new Error(500)  if err or response.statusCode isnt 200
     parser body, (err, result) ->
       res.send format result

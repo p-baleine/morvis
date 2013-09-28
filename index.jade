@@ -3,15 +3,25 @@ html
   head
     meta(charset="utf-8")
     meta(name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no")
-    title mavis
+    title mavis 係り受けを視覚化
     link(href="/application.css" rel="stylesheet")
   body
-    header.row
-      h1.col-xs-12.col-sm-8.col-md-6.col-sm-offset-2.col-md-offset-3 係り受け解析
     div.row
       section#content.col-xs-12.col-sm-10.col-md-8.col-lg-6.col-sm-offset-1.col-md-offset-2.col-lg-offset-3
-    div.row
-    form#target-text.col-xs-12.col-sm-8.col-md-6.col-sm-offset-2.col-md-offset-3
-      textarea.form-control(rows="3" placeholder="解析する文章を入力してください")
-      input.btn.btn-primary(type="submit" value="解析")
+        h1 係り受けを調べてみる
+    form#target-text.col-xs-12.col-sm-10.col-md-8.col-lg-6.col-sm-offset-1.col-md-offset-2.col-lg-offset-3
+      textarea.form-control(rows="4" placeholder="文章を入力してください")
+      input.btn.btn-primary.col-xs-12.col-sm-2(type="submit" value="調べてみる")
+    div#acknowledge.col-xs-12.col-sm-10.col-md-8.col-lg-6.col-sm-offset-1.col-md-offset-2.col-lg-offset-3
+      ul
+        li
+          span フォント
+          a(href="http://www001.upp.so-net.ne.jp/mikachan/" target="_blank") みかちゃんフォント
+        li
+          span 係り受けについて
+          a(href="http://xn--vcs415akpfnn7a.com/%E3%80%8C%E4%BF%82%E3%82%8A%E5%8F%97%E3%81%91%E3%80%8D%E3%81%A8%E3%81%AF.html" target="_blank") 「係り受け」とは
+        li
+          span ソース
+          iframe(src="http://ghbtns.com/github-btn.html?user=p-baleine&repo=morvis&type=watch"
+                 allowtransparency="true" frameborder="0" scrolling="0" width="50" height="20")
     script(src="/application.js")

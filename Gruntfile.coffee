@@ -55,10 +55,7 @@ exports = module.exports = (grunt) ->
     less:
       dev:
         files:
-          "public/application.css": [
-            "bower_components/bootstrap/less/bootstrap.less"
-            "less/**/*.less"
-          ]
+          "public/application.css": ["less/**/*.less"]
 
     nodemon:
       dev: {}

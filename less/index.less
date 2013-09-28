@@ -1,18 +1,46 @@
 
+@import "../bower_components/bootstrap/less/bootstrap.less";
+@import "../bower_components/bootstrap/less/variables.less";
 @import "font.less";
 
-h1, #content {
-  font-family: mikachan;
+.row {
+  margin: 0;
 }
 
 #content {
-  font-size: 36px;
+  font-family: mikachan;
+  position: relative;
+  font-size: 12px;
   background-image: url(/note.png);
   background-size: 100% auto;
+  overflow-x: hidden;
+  margin-top: 10px;
+
+  h1 {
+    position: absolute;
+    margin-left: 10px;
+    font-size: 18px;
+    font-family: mikachan;
+  }
+
+  @media (min-width: @screen-tablet) {
+    font-size: 16px;
+    h1 {
+      font-size: 36px;
+      margin-left: 30px;
+    }
+  }
 
   .node {
     stroke: #333;
     stroke-width: 1.5px;
+
+    circle {
+      fill: #4682b4;
+      opacity: .6;
+      stroke: #4682b4;
+      stroke-opacity: .4;
+    }
   }
 
   .link {
@@ -24,10 +52,57 @@ h1, #content {
     stroke: #CCC;
     opacity: 0;
   }
+
+  .pallet {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 5px 30px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    background-color: #fffacd;
+    -webkit-box-shadow: 0 0 4px rgba(0, 0, 0, 0.2), inset 0 0 50px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0 0 4px rgba(0, 0, 0, 0.2), inset 0 0 50px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2), inset 0 0 50px rgba(0, 0, 0, 0.1);
+
+    &:before, &:after {
+      position: absolute;
+      width: 40%;
+      height: 10px;
+      content: ' ';
+      left: 12px;
+      bottom: 12px;
+      background: transparent;
+
+      -webkit-transform: skew(-5deg) rotate(-5deg);
+      -moz-transform: skew(-5deg) rotate(-5deg);
+      -ms-transform: skew(-5deg) rotate(-5deg);
+      -o-transform: skew(-5deg) rotate(-5deg);
+      transform: skew(-5deg) rotate(-5deg);
+      -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+      -moz-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+      z-index: -1;
+    }
+
+    &:after {
+      left: auto;
+      right: 12px;
+      -webkit-transform: skew(5deg) rotate(5deg);
+      -moz-transform: skew(5deg) rotate(5deg);
+      -ms-transform: skew(5deg) rotate(5deg);
+      -o-transform: skew(5deg) rotate(5deg);
+      transform: skew(5deg) rotate(5deg);
+    }
+
+    .key:after {
+      content: "\003000\002026\003000";
+    }
+  }
 }
 
 #target-text {
-  margin-top: 20px;
+  margin-top: 10px;
 
   textarea {
     width: 100%;
@@ -35,6 +110,30 @@ h1, #content {
 
   [type=submit] {
     margin-top: 10px;
-    float: right;
+  }
+}
+
+#acknowledge {
+  margin-top: 10px;
+  font-size: 12px;
+  ul, li {
+    list-style: none;
+  }
+  ul {
+    position: absolute;
+    right: 10px;
+    text-align: right;
+    padding-bottom: 10px;
+
+    li {
+      margin-top: 5px;
+    }
+    
+    span:after {
+      content: ": "
+    }
+    iframe {
+      margin-bottom: -5px;
+    }
   }
 }
