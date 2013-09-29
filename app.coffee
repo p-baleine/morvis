@@ -17,6 +17,7 @@ PORT = process.env.PORT or 3000
 app.use express.compress()
 app.use express.static "#{__dirname}/public"
 app.use staticAsset "#{__dirname}/public"
+app.use app.router
 app.use express.errorHandler()
 
 # settings
@@ -27,8 +28,8 @@ app.set "views", "."
 app.get "/", (req, res) ->
   res.render "index"
 
-app.get "/analyse", (req, res) ->
-  throw new Error(403)  unless req.query.q
+app.get "/analyse", (req, res, next) ->
+  return next new Error(403) unless req.query.q
 
   request.post DA_SERVICE,
     headers:
@@ -36,7 +37,7 @@ app.get "/analyse", (req, res) ->
     form:
       sentence: req.query.q
   , (err, response, body) ->
-    throw new Error(500)  if err or response.statusCode isnt 200
+    return next new Error(500) if err or response.statusCode isnt 200
     parser body, (err, result) ->
       res.send format result
 

@@ -13,6 +13,7 @@ sample = util.random(require("./sample.json"))
 
 d3.timer ->
   d3.json "/analyse?q=" + encodeURIComponent(sample.sentence), (err, res) ->
+    return alertError err if err
     note res
     d3.select("#content").append("div")
         .attr("class", "sample")
@@ -21,12 +22,17 @@ d3.timer ->
 , 1000
 
 form.on "submit", ->
-  d3.select(".sample").remove()
-  d3.selectAll(".link,.node").remove()
   d3.event.preventDefault()
   value = text.property("value")
+  return alert "文章を入力してください" if value.length is 0
+  d3.select(".sample").remove()
+  d3.selectAll(".link,.node").remove()
   d3.json "/analyse?q=" + encodeURIComponent(value), (err, res) ->
+    return alertError err if err
     note res
+
+alertError = (err) ->
+  alert "エラーが発生しました、時間をあけてから試してください。"
 
 window.addEventListener "load", ->
   setTimeout ->
