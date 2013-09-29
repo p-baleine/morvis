@@ -13,6 +13,9 @@ dictionary = [
   "助動詞"
   "形容詞"
   "副詞"
+  "連体詞"
+  "接尾辞"
+  "感動詞"
   "特殊"
 ].reduce (memo, val) ->
   memo[val] = color val
