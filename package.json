@@ -1,6 +1,6 @@
 {
   "name": "morvis",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "",
   "main": "app.js",
   "scripts": {
@@ -10,31 +10,31 @@
   "author": "",
   "license": "MIT",
   "dependencies": {
-    "d3": "latest",
-    "express": "latest",
-    "request": "latest",
-    "libxml-to-js": "latest",
-    "jade": "latest",
-    "browserify": "latest",
-    "coffeeify": "latest",
-    "browsernizr": "latest",
-    "underscore": "latest",
-    "static-asset": "latest",
-    "bower": "latest",
-    "grunt": "latest",
-    "grunt-browserify": "latest",
-    "grunt-contrib-coffee": "latest",
-    "grunt-contrib-less": "latest",
-    "grunt-contrib-uglify": "latest",
-    "grunt-env": "latest",
-    "debug": "latest"
+    "d3": "~3.3.6",
+    "express": "~3.4.0",
+    "request": "~2.27.0",
+    "libxml-to-js": "~0.3.11",
+    "jade": "~0.35.0",
+    "browserify": "~2.33.0",
+    "coffeeify": "~0.5.1",
+    "browsernizr": "~1.0.0",
+    "underscore": "~1.5.2",
+    "static-asset": "~0.5.2",
+    "bower": "~1.2.6",
+    "grunt": "~0.4.1",
+    "grunt-browserify": "~1.2.5",
+    "grunt-contrib-coffee": "~0.7.0",
+    "grunt-contrib-less": "~0.7.0",
+    "grunt-contrib-uglify": "~0.2.4",
+    "grunt-env": "~0.4.0",
+    "debug": "~0.7.2"
   },
   "devDependencies": {
-    "chai": "latest",
-    "sinon": "latest",
-    "sinon-chai": "latest",
-    "grunt-contrib-watch": "latest",
-    "grunt-nodemon": "latest",
-    "grunt-mocha-test": "latest"
+    "chai": "~1.8.0",
+    "sinon": "~1.7.3",
+    "sinon-chai": "~2.4.0",
+    "grunt-contrib-watch": "~0.5.3",
+    "grunt-nodemon": "~0.1.1",
+    "grunt-mocha-test": "~0.7.0"
   }
 }
