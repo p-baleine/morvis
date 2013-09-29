@@ -15,8 +15,8 @@ PORT = process.env.PORT or 3000
 
 # middleware
 app.use express.compress()
-app.use express.static "#{__dirname}/public"
 app.use staticAsset "#{__dirname}/public"
+app.use express.static "#{__dirname}/public", maxAge: 31557600000 # 1 year
 app.use app.router
 app.use express.errorHandler()
 
