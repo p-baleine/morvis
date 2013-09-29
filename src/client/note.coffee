@@ -24,8 +24,8 @@ svg.append("rect")
 
 start = (graph) ->
   force = d3.layout.force()
-      .charge(-120)
-      .linkDistance(80)
+      .charge(-80)
+      .linkDistance(60)
       .size([width, height])
 
   force
