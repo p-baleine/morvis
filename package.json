@@ -17,6 +17,7 @@
     "jade": "latest",
     "browserify": "latest",
     "coffeeify": "latest",
+    "browsernizr": "latest",
     "underscore": "latest",
     "static-asset": "latest",
     "bower": "latest",
