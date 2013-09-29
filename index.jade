@@ -4,7 +4,7 @@ html
     meta(charset="utf-8")
     meta(name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no")
     title mavis 係り受けを視覚化
-    link(href="/application.css" rel="stylesheet")
+    link(href=assetFingerprint("/application.css") rel="stylesheet")
   body
     div.row
       section#content.col-xs-12.col-sm-10.col-md-8.col-lg-6.col-sm-offset-1.col-md-offset-2.col-lg-offset-3
@@ -17,16 +17,26 @@ html
     div#acknowledge.col-xs-12.col-sm-10.col-md-8.col-lg-6.col-sm-offset-1.col-md-offset-2.col-lg-offset-3
       ul
         li
-          span フォント
-          a(href="http://www001.upp.so-net.ne.jp/mikachan/" target="_blank") みかちゃんフォント
-        li
           span 係り受けについて
           a(href="http://xn--vcs415akpfnn7a.com/%E3%80%8C%E4%BF%82%E3%82%8A%E5%8F%97%E3%81%91%E3%80%8D%E3%81%A8%E3%81%AF.html" target="_blank") 国語の先生が教える国語文法
+        li
+          span 日本語係り受け解析API
+          a(href="http://developer.yahoo.co.jp/webapi/jlp/da/v1/parse.html" target="_blank") Yahoo!デベロッパーネットワーク
+        li
+          span フォント
+          a(href="http://www001.upp.so-net.ne.jp/mikachan/" target="_blank") みかちゃんフォント
         li
           span ソース
           iframe(src="http://ghbtns.com/github-btn.html?user=p-baleine&repo=morvis&type=watch"
                  allowtransparency="true" frameborder="0" scrolling="0" width="50" height="20")
     if settings.env === "production"
       script(src=assetFingerprint("/application.min.js"))
+      script.
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+        ga('create', 'UA-44440709-1', 'morvis.herokuapp.com');
+        ga('send', 'pageview');
     else
       script(src=assetFingerprint("/application.js"))
