@@ -5,7 +5,7 @@ exports = module.exports = (grunt) ->
     watch:
       browserify:
         files: ["src/client/**/*.coffee"]
-        tasks: ["browserify"]
+        tasks: ["browserify:dev"]
       coffee:
         files: ["app.coffee", "src/*.coffee", "spec/*.coffee", "!src/client/boot.coffee"]
         tasks: ["coffee"]

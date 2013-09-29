@@ -12,7 +12,7 @@ submit.attr("disabled", "disabled")
 sample = util.random(require("./sample.json"))
 
 d3.timer ->
-  d3.json "/analyse?q=" + sample.sentence, (err, res) ->
+  d3.json "/analyse?q=" + encodeURIComponent(sample.sentence), (err, res) ->
     note res
     d3.select("#content").append("div")
         .attr("class", "sample")
@@ -25,7 +25,7 @@ form.on "submit", ->
   d3.selectAll(".link,.node").remove()
   d3.event.preventDefault()
   value = text.property("value")
-  d3.json "/analyse?q=" + value, (err, res) ->
+  d3.json "/analyse?q=" + encodeURIComponent(value), (err, res) ->
     note res
 
 window.addEventListener "load", ->
