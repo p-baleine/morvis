@@ -1,5 +1,5 @@
 
-# module dependencies.
+# Module dependencies.
 d3 = require "d3"
 util = require "./util.coffee"
 renderPallet = require "./pallet.coffee"
@@ -8,11 +8,9 @@ pallet = renderPallet.dictionary
 
 content = d3.select("#content")
 
-parse = (pxStr) ->
-  parseInt pxStr.replace(/px$/, ''), 10
-
-width = parse content.style("width")
-height = width / 1257 * 950
+node = content.node()
+width = node.innerWidth || node.clientWidth
+height = width / 1257 * 950 # 背景画像の比率
 
 svg = content.append("svg")
     .attr("width", width)

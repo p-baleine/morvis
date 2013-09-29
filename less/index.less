@@ -137,7 +137,12 @@ body {
 
 #acknowledge {
   margin-top: 10px;
-  font-size: 12px;
+  font-size: 10px;
+
+  @media (min-width: @screen-tablet) {
+    font-size: 12px;
+  }
+
   ul, li {
     list-style: none;
   }
